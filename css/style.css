@@ -1,0 +1,123 @@
+body{ 
+    font-family: Roboto,Arial,sans-serif;
+}
+
+      /* logo in center */
+
+      .logo-center {
+        display: block;
+        margin: 0 auto;
+        align-content: center;
+        margin-top: 40px;
+        width: 50px;
+        height: 50px;
+      }
+      
+            /* Title  */
+      
+      .title {
+        display: block;
+        margin: 0 auto;
+        align-content: center;
+      }
+
+
+      .title h1 {
+        text-align: center;
+        color: #060707;
+        margin: 1em 0;
+        font-size: 34px;
+        font-weight: 400;
+        letter-spacing: -.3px;
+      }
+       
+               /* the two paragraphs */
+      
+      .paragraphs {
+        display: flex;
+        
+        margin-top: 10px;
+        border: none;
+        margin: 30px;
+       
+      }
+      
+      .paragraphs p {
+        width: 70%;
+        padding: 20px;
+      
+        margin: 0.8em 0;
+        margin-left: 100px;
+        margin-right: 100px;
+          line-height: 1.75;
+          font-weight: 400; 
+      }
+
+            /* Shopping Carts */
+
+.shopping {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center
+}
+
+.quantity {
+    display: flex;
+    margin-top: 30px;
+    align-items: baseline;
+    justify-content: center;
+   
+}
+
+.heart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+i#red {
+    cursor: pointer;
+    user-select: none;
+}
+
+.heart i:hover {
+    color:red;
+}
+
+
+.quantity i:hover {
+    color:red;
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+

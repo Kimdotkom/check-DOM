@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Icons/bag-shopping-solid.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- <script src="js/main.js"></script> -->
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <header> 
+
+
+
+                                            <!--******** Navbar ********-->
+
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/732/732084.png?w=740"
+              alt=""
+              width="80"
+              height="70"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  ><i class="fa-solid fa-house"></i>Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-stars"></i>New</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Collection
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-person"></i>Shoes For Man</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-person-dress"></i>Shoes For
+                      Women</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-solid fa-children"></i>Shoes For Kids</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Sell</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+
+
+                                          <!-- ******** logo in center ******** -->
+
+      <img class="logo-center" src="Icons/bag-shopping-solid.svg" />
+
+
+
+
+                                          <!--******** title ******** -->
+
+      <section class="title">
+        <h1>Sign up for free. Join the community. Never pay for shipping.</h1>
+      </section>
+
+
+
+                                          <!--******** Paragraphs ******** -->
+
+      <div class="container">
+        <p class="lead">
+          Nike Members get free standard shipping (and discounted expedited
+          shipping) on every order—just sign in during checkout and you’ll
+          automatically get free shipping.
+        </p>
+
+        <p class="lead">
+          During checkout, Nike Members and guests can choose their preferred
+          shipping option—we’ll provide an estimated delivery date for every
+          item in your bag based on your shipping selection, the delivery
+          address, and where the item(s) ship from.
+        </p>
+      </div>
+
+
+    
+
+                                      <!--******** Shopping Carts ********-->
+
+
+
+
+      <div class="shopping">
+        <div class="card" style="width: 18rem" id="card1">
+          <img
+            src="https://img.stadiumgoods.com/16/35/26/08/16352608_34368100_2048.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div>
+              <h6>Price:</h6>
+              <h2 class="$">$</h2>
+              <h2 class="p2" >99</h2>
+            </div>
+
+            <div class="quantity">
+              <i  style='cursor:pointer'  class='fa-solid fa-circle-plus fa-2xl'></i>
+              <!--<h3 class="total" id="total1">1</h3>-->
+              <!-- <input id=quantity type=number min=1 max=20 size="2" value="1" /> -->
+              <span class="qte">0</span>
+              <i onclick="minus('card1')" style='cursor:pointer' class="fa-solid fa-circle-minus fa-2xl"></i>
+            </div>
+
+            <div class="heart">
+              <i style='cursor:pointer'
+                onclick="heart('hr1')"
+                class="fa-solid fa-heart"
+                id="hr1"
+              ></i>
+              <i style='cursor:pointer' onclick="deletecard('card1')" class="fa-solid fa-trash-can fa-xl" id="red"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem" id="card2">
+          <img
+            src="https://img.stadiumgoods.com/16/40/35/69/16403569_34391440_2048.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="price">
+              <h6>Price:</h6>
+              <h2 class="$">$</h2>
+              <h2 class="H2" id="price">99</h2>
+            </div>
+
+            <div class="quantity">
+                <i onclick="plus('card2')" style='cursor:pointer'  class="fa-solid fa-circle-plus fa-2xl"></i>
+                <!--<h3 class="total" id="total1">1</h3>-->
+                <!-- <input id=quantity type=number min=1 max=20 size="2" value="1" /> -->
+                <span class="qte">0</span>
+                <i onclick="minus('card2')" style='cursor:pointer'  class="fa-solid fa-circle-minus fa-2xl"></i>
+              </div>
+
+            <div class="heart">
+              <i style='cursor:pointer'
+                onclick="heart('hr2')"
+                class="fa-regular fa-heart fa-xl"
+                id="hr2"
+              ></i>
+              <i onclick="deletecard('card2')" class="fa-solid fa-trash-can fa-xl" id="red"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem" id="card3">
+          <img
+            src="https://img.stadiumgoods.com/15/25/25/05/15252505_27543624_2048.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="price">
+              <h6>Price:</h6>
+              <h2 class="$">$</h2>
+              <h2 class="H2" id="price">119</h2>
+            </div>
+
+            <div class="quantity">
+                <i onclick="plus('card3')" style='cursor:pointer'  class="fa-solid fa-circle-plus fa-2xl"></i>
+                <!--<h3 class="total" id="total1">1</h3>-->
+                <!-- <input id=quantity type=number min=1 max=20 size="2" value="1" /> -->
+                <span class="qte">0</span>
+                <i onclick="minus('card3')" style='cursor:pointer'  class="fa-solid fa-circle-minus fa-2xl"></i>
+              </div>
+
+            <div class="heart">
+              <i style='cursor:pointer'
+                onclick="heart('hr3')"
+                class="fa-regular fa-heart fa-xl"
+                id="hr3"
+              ></i>
+              <i onclick="deletecard('card3')" class="fa-solid fa-trash-can fa-xl" id="red"></i>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem" id="card4">
+          <img
+            src="https://img.stadiumgoods.com/18/26/63/87/18266387_39099274_2048.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="price">
+              <h6>Price:</h6>
+              <h2 class="$">$</h2>
+              <h2 class="H2" id="price">119</h2>
+            </div>
+
+            <div class="quantity">
+                <i onclick="plus('card4')" style='cursor:pointer'  class="fa-solid fa-circle-plus fa-2xl"></i>
+                <!--<h3 class="total" id="total1">1</h3>-->
+                <!-- <input id=quantity type=number min=1 max=20 size="2" value="1" /> -->
+                <span class="qte">0</span>
+                <i onclick="minus('card4')" style='cursor:pointer'  class="fa-solid fa-circle-minus fa-2xl"></i>
+              </div>
+
+            <div class="heart">
+              <i style='cursor:pointer'
+                onclick="heart('hr4')"
+                class="fa-regular fa-heart fa-xl"
+                id="hr4"
+              ></i>
+              <i onclick="deletecard('card4')" class="fa-solid fa-trash-can fa-xl" id="red"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem" id="card5">
+          <img
+            src="https://img.stadiumgoods.com/18/21/84/60/18218460_38994335_2048.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="price">
+              <h6>Price:</h6>
+              <h2 class="$">$</h2>
+              <h2 class="H2" id="price">99</h2>
+            </div>
+
+            <div class="quantity">
+                <i onclick="plus('card5')" style='cursor:pointer'  class="fa-solid fa-circle-plus fa-2xl"></i>
+                <!--<h3 class="total" id="total1">1</h3>-->
+                <input id=quantity type=number min=1 max=20 size="2" value="1" />
+                <i onclick="minus('card5')" style='cursor:pointer'  class="fa-solid fa-circle-minus fa-2xl"></i>
+              </div>
+
+            <div class="heart">
+              <i style='cursor:pointer'
+                onclick="heart('hr5')"
+                class="fa-regular fa-heart fa-xl"
+                id="hr5"
+              ></i>
+              <i onclick="deletecard('card5')" class="fa-solid fa-trash-can fa-xl" id="red"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem" id="card6">
+          <img
+            src="https://img.stadiumgoods.com/18/26/61/69/18266169_39099266_2048.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="price">
+              <h6>Price:</h6>
+              <h2 class="$">$</h2>
+              <h2 class="H2" id="price">119</h2>
+            </div>
+
+            <div class="quantity">
+                <i onclick="plus('card6')" style='cursor:pointer'  class="fa-solid fa-circle-plus fa-2xl"></i>
+                <!--<h3 class="total" id="total1">1</h3>-->
+                <input id=quantity type=number min=1 max=20 size="2" value="1" />
+                <i onclick="minus('card6')" style='cursor:pointer'  class="fa-solid fa-circle-minus fa-2xl"></i>
+              </div>
+
+            <div class="heart">
+              <i style='cursor:pointer'
+                onclick="heart('hr6')"
+                class="fa-regular fa-heart fa-xl"
+                id="hr6"
+              ></i>
+              <i onclick="deletecard('card6')" class="fa-solid fa-trash-can fa-xl" id="red"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem" id="card7">
+          <img
+            src="https://img.stadiumgoods.com/15/81/95/60/15819560_32509380_2048.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <div class="price">
+              <h6>Price:</h6>
+              <h2 class="$">$</h2>
+              <h2 class="H2" id="price">149</h2>
+            </div>
+
+            <div class="quantity">
+                <i onclick="plus('card7')" style='cursor:pointer'  class="fa-solid fa-circle-plus fa-2xl"></i>
+                <!--<h3 class="total" id="total1">1</h3>-->
+                <input id=quantity type=number min=1 max=20 size="2" value="1" />
+                <i onclick="minus('card7')" style='cursor:pointer'  class="fa-solid fa-circle-minus fa-2xl"></i>
+              </div>
+
+            <div class="heart">
+              <i style='cursor:pointer'
+                onclick="heart('hr7')"
+                class="fa-regular fa-heart fa-xl"
+                id="hr7"
+              ></i>
+              <i onclick="deletecard('card7')" class="fa-solid fa-trash-can fa-xl" id="red"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem" id="card8">
+          <img
+            src="https://img.stadiumgoods.com/14/90/46/25/14904625_27528572_2048.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+
+            <div class="price">
+              <h6>Price:</h6>
+              <h2 class="$">$</h2>
+              <h2 class="H2" id="price">99</h2>
+            </div>
+
+            <div class="quantity">
+                <i onclick="plus('card8')" style='cursor:pointer'  class="fa-solid fa-circle-plus fa-2xl"></i>
+                <!--<h3 class="total" id="total1">1</h3>-->
+                <input id=quantity type=number min=1 max=20 size="2" value="1" />
+
+                <i onclick="minus('card8')" style='cursor:pointer'  class="fa-solid fa-circle-minus fa-2xl"></i>
+              </div>
+
+            <div class="heart">
+              <i style='cursor:pointer'
+                onclick="heart('hr8')"
+                class="fa-regular fa-heart fa-xl"
+                id="hr8"
+              ></i>
+              <i onclick="deletecard('card8')" class="fa-solid fa-trash-can fa-xl" id="red"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="total-price-container"> 
+        <span>Total Price :</span>
+        <span id="total-price"> 0 </span>
+        <span>$</span>
+       </div>
+    </main>
+
+
+                                         <!--*********** Footer ************-->
+
+
+    <footer>
+<div class="b-example-divider"></div>
+
+
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-2">
+        <h5>Men</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Women</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-2">
+        <h5>Kids</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-4 offset-1">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of whats new and exciting from us.</p>
+          <div class="d-flex w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between py-4 my-4 border-top">
+      <p>&copy; 2021 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+    </footer>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d2967e71b9.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script
+        src="./js/index.js"></script>
+
+
+
+
+  </body>
+</html>
